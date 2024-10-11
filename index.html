@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>Student Success Portal</title>
 </head>
 <body>
     <header>
-        <a href = "#maincontent">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <a href = "#maincontent" class="skip-link">Skip to Main Content</a>
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Page 1</a></li>
-                <li><a href = "page_2.html">Page 2</a></li>
-                <li><a href = "page_3.html">Page 3</a></li>
+                <li><a href = "page_1.html">Maize & Blue Cupboard</a></li>
+                <li><a href = "page_2.html">CAPS</a></li>
+                <li><a href = "page_3.html">First-Gen</a></li>
             </ul>
         </nav>
         <h1>Student Success Portal</h1>
-
     </header>
-    <main id="maincontent">
+    <main class="container" id = "main">
+        <div class="Intro">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
@@ -33,6 +35,7 @@
                 <li>Contact</li>
             </ol>
         </section>
+        </div>
         <section>
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
@@ -53,30 +56,28 @@
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
             </article>
         </section>
-        
-        <section>
-            <h2>Mental Health</h2>
-            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
-            <article>
-                <h3>Counseling and Psychological Services (CAPS):</h3>
-                <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
-            </article>
-            <article>
-                <h3>Wellness Coaching:</h3>
 
-                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
-            </article>
-            <article>
-                <h3>Mindfulness Resources:</h3>
-
-                <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
-            </article>
-            <article>
-                <h3>Support Groups:</h3>
-
-                <p> Join peer support groups for shared experiences and collective coping strategies.</p>
-            </article>
-        </section>
+        <article id="mental">
+            <section>
+                <h2>Mental Health</h2>
+                <h3>Maintaining your mental well-being is crucial for thriving in graduate school. 
+                Here are resources to support your mental health:</h3>
+                <ol>
+                    <li>
+                        Counseling and Psychological Services (CAPS): Access individual counseling, group therapy, workshops, and crisis intervention services.
+                    </li>
+                    <li>
+                        Wellness Coaching: Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.
+                    </li>
+                    <li>
+                        Mindfulness Resources: Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.
+                    </li>
+                    <li>
+                        Support Groups: Join peer support groups for shared experiences and collective coping strategies.
+                    </li>
+                  </ol>
+            </section>
+        </article>
 
         
         <section id="life-outside-classroom">
