@@ -21,9 +21,34 @@ html{
 
 .container {
   display: grid;
-  grid-template-columns:auto auto;
+  grid-template-columns:1fr 5fr 1fr;
   grid-gap: 15px;
 }
+
+.intro{
+  padding: 2rem;
+  background-color: #CFC096;
+  grid-column: 2 / span 1;
+  grid-row-start: 1;
+}
+
+.physical{
+  grid-column: 2 / span 1;
+  grid-row-start: 2;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 12px; 
+  padding-top: -20px;
+}
+
 
 body{
   background-color: #ffffff;
@@ -37,7 +62,7 @@ body{
 h1{
   font-family: "IBMPlexSans-Bold";
   color:#00274C;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin-top: 2%;
@@ -47,24 +72,35 @@ h1{
 h2{
   font-family: "IBMPlexSans-Bold";
   color:#000000;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 h3{
   font-family: "IBMPlexSans-Regular";
   color:#00274C;
   font-size: 18px;
+  margin-bottom: 2%;
 }
 
-p, h1, h2, h3, h4 {
-  padding: 10px;
-  line-height: 10px;
+h4{
+  font-family: "IBMPlexSans-Regular";
+  color:hsl(209, 100%, 15%);
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #FFCB05;
+}
+
+p{
+  color:black;
+  font-size: 16px;
+  margin-bottom: 2%;
 }
 
 img{
   padding: 10px;
-  margin: 30px;
 }
 
 .skip-link {
@@ -97,7 +133,12 @@ nav ul {
 }
 
 ol li{
-  margin: 1%;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  text-align: left;
+  font-weight: bold;
+  color:black;
+  font-size: 16px;
 }
 
 nav ul a {
@@ -121,10 +162,62 @@ nav ul li {
   margin: 0.25rem;
 }
 
-#mental section {
+.mental {
+  grid-column: 2 / span 1;
+  grid-row-start: 3;
+}
+.mental:nth-child(2) {
+  padding-top: 0;
+}
+
+.outside {
+  grid-column: 2 / span 1;
+  grid-row-start: 4;
+}
+
+.contact{
+  grid-column: 2 / span 1;
+  grid-row-start: 5;
+}
+
+* :focus {
+  border: 2px solid #9A3324; 
+}
+
+
+
+.mission{
   padding: 2rem;
   background-color: #CFC096;
+  grid-column: 2 / span 1;
+  grid-row-start: 1;
 }
-#mental section:nth-child(2) {
-  padding-top: 0;
+.mobile{
+  grid-column: 2 / span 1;
+  grid-row-start: 2;
+}
+
+.news{
+  grid-column: 2 / span 1;
+  grid-row-start: 2;
+}
+
+.event{
+  grid-column: 2 / span 1;
+  grid-row-start: 3;
+}
+
+.mimage{
+  grid-column: 2 / span 1;
+  grid-row-start: 3;
+}
+.peer{
+  grid-column: 2 / span 1;
+  grid-row-start: 3;
+}
+
+footer{
+  color: #00274C;
+  padding-top: 30px;
+  text-align: center;
 }
