@@ -10,10 +10,11 @@
 <body>
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Maize & Blue Cupboard</a></li>
+                <li><a class="active" href = "page_1.html">Maize & Blue Cupboard</a></li>
                 <li><a href = "page_2.html">CAPS</a></li>
                 <li><a href = "page_3.html">First-Gen</a></li>
             </ul>
@@ -28,10 +29,16 @@
             <p>
                 Maize was simply defined as the color of corn, but the committee emphasized the pale lemon yellow “should be avoided.” In hopes of ending color drift, the committee chose maize and blue ribbons to be the exemplars for all official University of Michigan colors from then on. College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions.
             </p>
-            <figure>
-                <img src="images/MCOMMONSDSC03396.jpg" alt="Student Getting Food">
-                <figcaption>Student Getting Food</figcaption>
-            </figure>
+            <div class="figures-container">
+                <figure>
+                    <img src="images/maize2.jpg" alt="Maize & Blue Cupboard">
+                    <figcaption>Maize & Blue Cupboard mission</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/maize1.jpg" alt="Maize & Blue Cupboard">
+                    <figcaption>Spaces: Maize & Blue Cupboard</figcaption>
+                </figure>
+            </div>
             <h2>WHO WE ARE</h2>
             <h3>College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions. </p>
             <h2>WHAT WE PROVIDE</h2>
@@ -60,15 +67,45 @@
         </div>
 
         <div class = "mimage">
-            <figure>
-                <img src="images/scott-warman-NpNvI4ilT4A-unsplash.jpg" alt="Vegetables">
-            </figure>
+
+            <div class="figures-container">
+                <figure>
+                    <img src="images/MCOMMONSDSC03396.jpg" alt="Student Getting Food">
+                <figcaption>Student Getting Food</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/food1.jpg.JPG" alt="Event">
+                    <figcaption>Student Food Event</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class = "email-form">
+            <form id="desktop-form" action="https://formspree.io/f/xzzberoj" method="post"> 
+                <fieldset>
+                    <legend>Do you want to join our email list to receive the latest news from the Maize and Blue Cupboard?</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name= "first-name" placeholder="E.g. John" id="first-name"  required>
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text"  name="last-name" placeholder="E.g. Johnson" id="last-name"required>
+    
+                    <label for="program">Program: </label>
+                    <input type="text" id="program" placeholder="E.g. MSI" name="program">
+    
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
         </div>
 
     </main>
+
     <footer>
-        <p>Maize and Blue Cupboard | <a href="https://mbc.studentlife.umich.edu">Maize and Blue Cupboard </a></p>
+        <p>© Copyrights <span id="year"></span> by <a href="https://mbc.studentlife.umich.edu">Maize and Blue Cupboard</a> | All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 </html>

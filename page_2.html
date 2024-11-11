@@ -11,11 +11,12 @@
 <body>
   <header>
       <a href = "#main" class="skip-link">Skip to Main Content</a>
+      <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
       <nav>
           <ul>
               <li><a href = "index.html">Home</a></li>
               <li><a href = "page_1.html">Maize & Blue Cupboard</a></li>
-              <li><a href = "page_2.html">CAPS</a></li>
+              <li><a class="active" href = "page_2.html">CAPS</a></li>
               <li><a href = "page_3.html">First-Gen</a></li>
           </ul>
       </nav>
@@ -30,6 +31,17 @@
             <img src="images/MCOMMONS-YostArena_EXT.jpg.jpg" alt="VP Communications">
             <figcaption>VP Communications Building</figcaption>
           </figure>
+          
+          <div class="video-explanation-container">
+            <div class="video-container">
+                <iframe title="Student_Vlog" width="560" height="315" src="https://www.youtube.com/embed/77nc3qmzl2k?si=639vlzwTJ52O6P-d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+      
+            <div class="explanation-container">
+                <h2>University of Michigan Student Vlog: Mental Health</h2>
+                <p>Between classes, work, and social commitments, college life is filled with stressors. In this vlog, @UMichAdmissions blogger Maryam discusses how she manages stress and prioritizes her mental health.</p>
+            </div>
+        </div>
       </div>
 
       <div class="mobile">
@@ -50,16 +62,45 @@
         <p>Peer counseling can offer students a relaxed and laid back place to vent and find support. We are able to listen and relate, as well as give you a judgment-free space to talk out your thoughts. Students have reported appreciating having someone outside of their immediate circle to talk to as well as someone who is able to support them in working through personal challenges.</p>
         <h3>Meet the Peer Counselors</h3>
         <p>We invite you to check out the PC Team below.  All Peer Counselors have gone through training and participate in weekly consultation facilitated by CAPS Staff.  </p>
-        <figure>
-          <img src="images/Untitleddesign(1)-2.png" alt="Individual Peer Counseling">
-          <figcaption>Individual Peer Counseling</figcaption>
-        </figure>
+
+
+        <div class="figures-container">
+          <figure>
+            <img src="images/Untitleddesign(1)-2.png" alt="Individual Peer Counseling">
+          </figure>
+          <figure>
+              <img src="images/student5.jpg.JPG" alt="Event">
+              <figcaption>Student Event</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class = "email-form">
+        <form id="desktop-form" action="https://formspree.io/f/xzzberoj" method="post"> 
+            <fieldset>
+                <legend>Do you want to join our email list to receive the latest news from Counseling and Psychological Services?</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" name= "first-name" placeholder="E.g. John" id="first-name"  required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text"  name="last-name" placeholder="E.g. Johnson" id="last-name"required>
+
+                <label for="program">Program: </label>
+                <input type="text" id="program" placeholder="E.g. MSI" name="program">
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
       </div>
 
   </main>
+
   <footer>
-    <p>Counseling and Psychological Services (CAPS) | <a href="https://caps.umich.edu">Counseling and Psychological Services (CAPS) </a></p>
-  </footer>
+        <p>© Copyrights <span id="year"></span> by <a href="https://caps.umich.edu">Counseling and Psychological Services (CAPS) </a> | All rights reserved.</p>
+    </footer>
+  <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
   
 </body>
 

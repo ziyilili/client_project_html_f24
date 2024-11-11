@@ -11,12 +11,13 @@
 <body>
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "page_1.html">Maize & Blue Cupboard</a></li>
                 <li><a href = "page_2.html">CAPS</a></li>
-                <li><a href = "page_3.html">First-Gen</a></li>
+                <li><a class="active" href = "page_3.html">First-Gen</a></li>
             </ul>
         </nav>
         <h1>FIRST-GENERATION COLLEGE STUDENT</h1>
@@ -30,7 +31,18 @@
             <figure>
                     <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student">
                     <figcaption>Student Wearing UMSI Backpack</figcaption>
-                </figure>
+            </figure>
+
+            <div class="video-explanation-container">
+                <div class="video-container">
+                    <iframe title="Shantaisa King's Journey" width="560" height="315" src="https://www.youtube.com/embed/kVw97w4Rl_4?si=wsDOMCx74cfIQgG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+          
+                <div class="explanation-container">
+                    <h2>Shantaisa King's Journey at UMSI as a First-Gen College Student</h2>
+                    <p>Bachelor of Science in Information student Shantaisa King shares her journey of transferring from Grand Rapids Community College to the School of Information. "Coming here and spending some time figuring out how information can be used to solve social issues, I knew that was where I needed to be," King recalls of her weekend at the UMSI Community College Summer Institute. Now a senior in the BSI, King is doing research with Professor Kentaro Toyama as she prepares for her next big goal: earning a PhD.</p>
+                </div>
+            </div>
             
         </div>
 
@@ -63,10 +75,31 @@
             </p>
         </div>
 
+        <div class = "email-form">
+            <form id="desktop-form" action="https://formspree.io/f/xzzberoj" method="post"> 
+                <fieldset>
+                    <legend>Do you want to join our email list to receive the latest news from FIRST-GENERATION College Students Groups</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name= "first-name" placeholder="E.g. John" id="first-name"  required>
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text"  name="last-name" placeholder="E.g. Johnson" id="last-name"required>
+    
+                    <label for="program">Program: </label>
+                    <input type="text" id="program" placeholder="E.g. MSI" name="program">
+    
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+
     </main>
     <footer>
-        <p>FIRST-GENERATION College Student | <a href="https://firstgen.umich.edu">FIRST-GENERATION College Student </a></p>
+        <p>© Copyrights <span id="year"></span> by <a href="https://firstgen.umich.edu">FIRST-GENERATION College Student </a> | All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 
