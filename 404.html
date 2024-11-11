@@ -31,5 +31,15 @@
         <a href="index.html" class="go-home">Go to Homepage</a>
       </div>
     </main>
+
+    <!-- Code adapted from codexworld example:
+    https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ 
+    (Source: https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ retrieved in Nov. 10th 2024) -->
+    <footer>
+      <p>© Copyrights <span id="year"></span> by <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a> | All rights reserved. </p>
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
