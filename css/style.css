@@ -141,6 +141,10 @@ ol li{
   font-size: 16px;
 }
 
+/* Code adapted from stylestage example:
+https://stylestage.dev/styles/artsy-blue-and-turquoise/ 
+(Source: https://stylestage.dev/styles/artsy-blue-and-turquoise/ retrieved in Nov. 10th 2024) */
+
 nav ul a {
   display: inline-grid;
   padding: 0.5rem;
@@ -250,6 +254,10 @@ label {
   margin-bottom: 10px;
 }
 
+/* Code adapted from w3schools.com example:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 
+(Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 retrieved in Nov. 10th 2024) */
+
 input[type="text"], input[type="number"] {
   width: 80%;
   padding: 8px;
@@ -258,6 +266,9 @@ input[type="text"], input[type="number"] {
   border-radius: 5px;
 }
 
+/* Code adapted from developer.mozilla.org example:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit
+(Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit retrieved in Nov. 10th 2024) */
 input[type="submit"] {
   margin-top: 50px;
   background-color: #FFCB05; 
